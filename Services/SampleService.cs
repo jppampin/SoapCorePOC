@@ -18,6 +18,10 @@ namespace Services
     public MyCustomModel TestCustomModel(MyCustomModel customModel)
     {
       customModel.Apellido += " Modificado!";
+      foreach( var direccion in customModel.Direcciones) 
+      {
+	direccion.Calle += " Modificado!";
+      }
       return customModel;
     }
   }
