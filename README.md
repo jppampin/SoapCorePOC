@@ -30,3 +30,31 @@ Para invocar la operación con un modelo complejo utilizar la siguiente trama XM
   </soap:Body>
 </soap:Envelope>
 ```
+## Response Esperado
+
+Este es un ejemplo de la respuesta
+
+``` xml
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <s:Body>
+        <TestCustomModelResponse xmlns="http://tempuri.org/">
+            <TestCustomModelResult>
+                <Id>1231</Id>
+                <Nombre>John</Nombre>
+                <Apellido>Doe Modificado!</Apellido>
+                <Direcciones>
+                    <Direccion>
+                        <Calle>Mariano Acha Modificado!</Calle>
+                        <Numero>1033</Numero>
+                    </Direccion>
+                    <Direccion>
+                        <Calle>Palpa Modificado!</Calle>
+                        <Numero>1020</Numero>
+                    </Direccion>
+                </Direcciones>
+            </TestCustomModelResult>
+        </TestCustomModelResponse>
+    </s:Body>
+</s:Envelope>
+```
+
